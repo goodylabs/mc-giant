@@ -1,0 +1,28 @@
+{
+  "name": "mc-giant",
+  "version": "1.0.0",
+  "description": "Giant Product Directory API",
+  "main": "index.js",
+  "repository": "https://github.com/goodylabs/mc-giant",
+  "author": "lipkap@goodylabs.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10",
+    "memory-cache": "^0.2.0",
+    "moment": "^2.22.2",
+    "node-cron": "^1.2.1",
+    "numeral": "^2.0.6",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "start:dev": "nodemon ./index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
