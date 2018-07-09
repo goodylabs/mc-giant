@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "name": "mc-giant",
+            "interpreter": "yarn",
+            "interpreter_args": "start",
+            "script": ".",
+            "cwd": "/home/mcgiant/mcgiant/current/",
+            "env": {
+                "NODE_ENV": "production",
+            }
+        }
+    ]
+}
