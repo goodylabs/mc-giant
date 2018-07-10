@@ -3,7 +3,6 @@ module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
   require('shipit-yarn')(shipit);
   require('shipit-pm2')(shipit);
-  require('shipit-slack')(shipit);
   var moment = require('moment');
 
   switch (shipit.environment) {
@@ -25,13 +24,11 @@ module.exports = function (shipit) {
           yarn: {
             remote: true,
             installFlags: [],
-          },
-        }
-          //branch: 'pl/koa-deploy'
+          }
       },
       production: {
           branch: 'master',
-          servers: ['mcgiant@46.101.212.29'],
+          servers: ['mcgiant@mcsport.pl'],
           pm2: {
               json: '/home/mcgiant/mcgiant/current/pm2/production.json'
           }
