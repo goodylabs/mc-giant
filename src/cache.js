@@ -4,8 +4,9 @@ const api = require('./api');
 
 const init =  async() => {
   const { rootNodes } = conf;
+  console.log('ROOY NODES', rootNodes);
   await Promise.all(rootNodes.map(async ({nodeId, depth}) => (await initializeNode(nodeId, 0, depth))));
-  console.log('Cache is: ', toString());
+  // console.log('Cache is: ', toString());
 }
 
 const initializeNode =  async (nodeId, depth, maxDepth, parent) => {
